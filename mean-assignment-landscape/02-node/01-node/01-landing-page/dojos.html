@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Dojos</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<style>
+	.container {
+		width: 900px;
+	}
+	h1 {
+		text-align: center;
+    	margin-top: 15px;
+	}
+	h3 {
+		padding: 10px;
+	}
+	.form-check-input {
+		margin-left: 15px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Dojos</h1>
+		<hr class="my-4">
+		<form href="#">
+			<div class="form-group">
+				<p>First Name: <input type="text" class="form-control" name="first_name"></p>
+				<p>Last Name: <input type="text" class="form-control" name="last_name"></p>
+				<p>Weapon Choice: 
+					<select name="weapon" class="form-control">
+						<option value="twin_katana">Twin Katana</option>
+						<option value="bo">Bo</option>
+						<option value="sais">Sais</option>
+						<option value="nunchaku">Nunchaku</option>
+					</select>
+				</p>
+				<h5>Are you a Friend or Foe?</h5>
+				<p><input type="radio" class="form-check-input" name="standing" value="friend">Friend</p>				
+				<p><input type="radio" class="form-check-input" name="standing" value="foe">Foe</p>			
+				<button type="submit" class="btn btn-outline-primary">Submit</button>
+			</div>	
+		</form>	
+	</div>	
+</body>
+</html>
