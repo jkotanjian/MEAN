@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title><$=cats.name %></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>This is <%=cats.name %>...</h1>
+		<hr class="my-4">
+		<img src="<%=cats.img %>" alt="<%=cats.name %>">
+		<h5>Favorite Toy:</h5>
+		<p><%=cats.toy %></p>
+		<h5>Age:</h5> 
+		<p><%=cats.age %></p>
+		<h5>Most Likely to be Seen:</h5>
+		<p><%=cats.seen %></p>
+		<a class="btn btn-outline-primary" href="http://localhost:8000/cats">Back</a>
+		<hr class="my-4">
+	</div>	
+</body>
+</html>
