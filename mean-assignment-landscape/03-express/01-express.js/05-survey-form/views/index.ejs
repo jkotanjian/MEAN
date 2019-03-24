@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Survey</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Coding Dojo Survey</h1>
+		<hr class="my-4">
+		<form action='/result' method="post">
+			<div class="form-group">
+				<p>Name: <input type="text" name="name" class="form-control"></p>
+				<p>Dojo Location: 
+					<select name="location" class="form-control">
+						<option value="berkeley">Berkeley</option>
+						<option value="boise">Boise</option>
+						<option value="san jose">San Jose</option>
+						<option value="tulsa">Tulsa</option>
+					</select>
+				</p>
+				<p>Favorite Language: 
+					<select name="language" class="form-control">
+						<option value="c#">C#</option>
+						<option value="python">Python</option>
+						<option value="javas">Java</option>
+						<option value="ruby">Ruby</option>
+					</select>
+				</p>
+				<p>Comment (optional): <textarea name="comment" rows="5" cols="55" class="form-control"></textarea></p>
+				<button class="btn btn-outline-primary" type="submit">Submit</button>
+			</div>	
+		</form>	
+	</div>	
+</body>
+</html>
