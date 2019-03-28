@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Survey</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script>
+	$(document).ready(function () {
+		var socket = io();
+		socket.on('greeting', function (data) {
+			$('.info').append(`<h3>${data.msg}</h3>`);
+			$('h4').append(`${data.num}`)
+		});
+	})
+</script>	
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Your Survey Info</h1>
+		<hr class="my-4">
+		<div class="info"></div>
+		<h4>Your lucky number emitted by the server is...</h4>
+		<hr class="my-4">
+		<p>Name: <%=info.name %></p>
+		<p>Dojo Location: <%=info.location %></p>
+		<p>Favorite Language: <%=info.language %></p>
+		<p>Comment (optional): <%=info.comment %></p>
+		<a class="btn btn-outline-danger" href="/">Back</a>
+	</div>	
+</body>
+</html>
