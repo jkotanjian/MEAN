@@ -1,0 +1,13 @@
+.container {
+	background-color: #add8e61a;
+	width: 960px;
+}
+h1 {
+	padding: 10px;
+}
+form.form-group {
+	width: 600px;
+}
+.messages {
+	display: inline;
+}
