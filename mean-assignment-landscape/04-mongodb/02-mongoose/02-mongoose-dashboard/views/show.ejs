@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Pupper Doggo</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4"><%= puppers.name %></h1>
+		<hr class="my-4">
+		<p><b>Age: </b><%= puppers.age %></p>
+		<p><b>Weight: </b><%= puppers.weight %></p>
+		<p><b>Favorite Activities: </b><%= puppers.activity %></p>
+		<a href='/' class="btn btn-outline-dark">View all Pupper Doggos</a>
+		<a href='<%= puppers._id %>/edit' class="btn btn-outline-primary">Edit this Pupper Doggo</a>
+		<a href='<%= puppers._id %>/destroy' class="btn btn-outline-danger">Delete this Pupper Doggo</a>	
+	</div>	
+</body>
+</html>

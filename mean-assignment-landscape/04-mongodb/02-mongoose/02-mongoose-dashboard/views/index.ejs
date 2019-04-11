@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Mongoose Dashboard</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Welcome to the Pupper Doggo Dashboard!</h1>
+		<a href='/puppers/new' class="btn btn-dark">Add a new Pupper Doggo!</a>
+		<hr class="my-4">
+		<div class="puppers">
+			<% for (var pupper of puppers) { %>
+				<ul><a href='/<%= pupper._id %>' class="name"><b><%= pupper.name %></a></b>
+					<li>Age: <%= pupper.age %></li>
+					<li>Weight: <%= pupper.weight %></li>
+					<li>Favorite Activity: <%= pupper.activity %></li>
+					<li><a href='<%= pupper._id %>/edit'>Edit the Pupper</a></li>
+					<li><a href='<%= pupper._id %>/destroy' class="delete">Delete the Pupper</a></li>
+				</ul>	
+			<% } %>	
+		</div>
+	</div>	
+</body>
+</html>
