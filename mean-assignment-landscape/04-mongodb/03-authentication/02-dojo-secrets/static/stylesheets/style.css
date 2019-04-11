@@ -1,0 +1,23 @@
+.container {
+	background-color: #add8e61a;
+	width: 960px;
+	text-align: center;
+}
+form.form-group {
+	width: 900px;
+	text-align: left;
+}
+a {
+	display: block;
+	color: black;
+	margin-left: 15px;
+}
+a.delete {
+	color: crimson;
+}
+table.table.table-borderless {
+	display: inline;
+}
+.add {
+	text-align: left;
+}

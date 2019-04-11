@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Login | Registration</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Dojo Secrets</h1>
+		<p class="lead">Please login or register to continue...</p>
+		<hr class="my-4">
+		<% if(messages.errors) { %>
+            <% for(error of messages.errors) { %>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert"><%= error %></div>
+            <% } %>
+        <% } %>
+		<h2>Login:</h2>
+		<form action='/login' method='post' class="form-group">
+			<p class="lead">Email: <input type="text" name="email" class="form-control"></p>
+			<p class="lead">Password: <input type="password" name="password" class="form-control"></p>
+			<button type="submit" class="btn btn-outline-primary">Login</button>
+		</form>	
+		<hr class="my-4">
+		<h2>Register:</h2>
+		<form action='/registration' method='post' class="form-group">
+			<p class="lead">First Name: <input type="text" name="first_name" class="form-control"></p>
+			<p class="lead">Last Name: <input type="text" name="last_name" class="form-control"></p>
+			<p class="lead">Email: <input type="text" name="email" class="form-control"></p>
+			<p class="lead">Birthday: <input type="date" name="birthday" class="form-control"></p>
+			<p class="lead">Password: <input type="password" name="password" class="form-control"></p>
+			<p class="lead">Confirm Password: <input type="password" name="confirm_password" class="form-control"></p>
+			<button type="submit" class="btn btn-outline-primary">Register</button>
+		</form>
+		<hr class="my-4">
+	</div>	
+</body>
+</html>
