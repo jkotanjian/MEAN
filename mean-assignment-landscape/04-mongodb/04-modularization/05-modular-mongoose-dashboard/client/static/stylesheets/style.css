@@ -1,0 +1,29 @@
+.container {
+	text-align: center;
+	background-color: #add8e61a;
+}
+input.form-control {
+	margin: 5px 0px 15px 0px;
+}
+ul, li {
+	list-style-type: none;
+	background-color: white;
+	display: table;
+	width: 300px;
+	padding: 5px;
+}
+ul {
+	border: 2px solid black;
+}
+div.puppers {
+	display: inline-block;
+}
+.btn.btn-dark {
+	margin-top: 10px;
+}
+.delete {
+	color: crimson;
+}
+.name {
+	color: black;
+}
