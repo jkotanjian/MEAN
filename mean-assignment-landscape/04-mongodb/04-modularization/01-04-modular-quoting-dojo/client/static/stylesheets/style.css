@@ -1,0 +1,12 @@
+.container {
+	text-align: center;
+}
+form.form-group {
+	display: contents;
+}
+input.form-control, textarea {
+	margin: 5px 0px 15px 0px;
+}
+h6 {
+	font-size: 10px;
+}

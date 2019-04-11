@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name=charset content="utf-8"><title>Quoting Dojo</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./client/static/stylesheets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div class="container">
+		<h1 class="display-4">Here are the awesome quotes!</h1>
+		<hr class="my-4">
+		<div class="users">
+			<% for (var user of user) { %>
+				<p class="lead"><b><%= user.name %>: </b><em><%= user.quote %></em></p>
+				<h6><%= user.createdAt %></h6>
+			<% } %>
+		</div>
+		<a href='/' class="btn btn-outline-danger">Back</a>
+	</div>	
+</body>
+</html>
